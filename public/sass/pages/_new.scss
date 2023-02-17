@@ -1,0 +1,81 @@
+#form{
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+    & label{
+        color: white;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        display: block;
+    }
+    & input{
+        font-family:'STARWARS';
+        font-size: 0.87em;
+        width: 490px;
+        height: 50px;
+        padding: 0px 15px 0px 15px;
+
+        
+        outline: none;
+        color: #726659;
+
+        border: solid 1px #b3aca7;
+        border-bottom: none;
+
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+    }
+    & input:hover{
+        background: #b3aca7;
+        color: #e2dedb;
+    }
+    & textarea{
+        width: 490px;
+        max-width: 490px;
+        height: 110px;
+        max-height: 110px;
+        padding: 15px;
+        
+        
+        outline: none;
+        
+        color: #726659;
+        font-family: 'STARWARS';
+        font-size: 0.875em;
+        
+        border: solid 1px #b3aca7;
+        
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+    }
+    & textarea:hover{
+        background: #b3aca7;
+        color: #e2dedb;
+    }
+    & .form_button{
+        width: 470px;
+  
+        padding: 10px;
+        margin: 10px;
+        background: rgb(119, 191, 11);
+        
+        font-family: 'Lato', sans-serif;
+        font-size: 0.875em;
+        color: white;
+        
+        outline:none;
+        cursor: pointer;
+        
+        border: solid 1px #b3aca7;
+        border-top: none;
+        &:hover{
+            color: #e2dedb;
+        }
+    }
+
+}

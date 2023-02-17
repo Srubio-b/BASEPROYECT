@@ -1,0 +1,89 @@
+
+.card {
+    // border: 5px solid green;
+    width: 10em;
+    flex-grow: 0;
+    box-shadow: 
+        1px 3px 5px rgba(0, 0, 0, 0.2),
+        0 0 8px rgba(0, 0, 0, .05)
+    ;
+    border-radius: 5px 5px 0 0;
+    transition: all .2s;
+    color: white;
+    
+
+    &:hover {
+        transform: scale(1.06);
+        transform-origin: bottom;
+        background-color: #fbd64a;
+        color: black;
+    }
+
+    // &:nth-child(5n+1) {
+    //     background: linear-gradient(to bottom, hsl(300, 30%, 55%) 0%, hsl(300, 30%, 40%) 100%);
+    // }
+
+    // &:nth-child(5n+2) {
+    //     background: linear-gradient(to bottom, hsl(350, 30%, 55%) 0%, hsl(350, 30%, 40%) 100%);
+    // }
+
+    // &:nth-child(5n+3) {
+    //     background: linear-gradient(to bottom, hsl(250, 30%, 55%) 0%, hsl(250, 30%, 40%) 100%);
+    // }
+
+    // &:nth-child(5n+4) {
+    //     background: linear-gradient(to bottom, hsl(200, 30%, 55%) 0%, hsl(200, 30%, 40%) 100%);
+    //     background-color: #f6f2cf;
+    // }
+
+    // &:nth-child(5n+5) {
+    //     background: linear-gradient(to bottom, rgb(117, 106, 175) 0%, hsl(250, 30%, 40%) 100%);
+    //     background-color: #e3f3db;
+    //     opacity: .8;
+    // }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        // border: 5px solid red;
+        
+        @media (min-width: 320px) {
+            // flex-direction: row;
+        }
+        
+        @media (min-width: 500px) {
+            flex-direction: column;
+        }
+    }
+    
+    &__image-container {
+        /* border: 5px solid red; */
+        background: #303030;
+        height: 10em;
+        // border: 5px solid red;
+        
+        @media (min-width: 320px) {
+            width: 10em;
+        }
+        
+        @media (min-width: 500px) {
+            width: 100%;
+        }
+    }
+    
+    &__image {
+        /* border: 4px solid black; */
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    &__content {
+        // border: 5px solid red;
+        /* border: 4px solid magenta; */
+        text-align: center;
+        background-color: rgb(255, 255, 255, .01);
+
+    }
+
+}

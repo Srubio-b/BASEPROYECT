@@ -1,0 +1,46 @@
+<div class="form-group">
+    <label for="name">Name</label>
+    <input 
+    required
+    type="text"
+    id="name"
+    name="name"
+    value="<%= article.name %>"
+    />
+</div>
+
+<div class="form-group">
+    <label for="description">Descripción</label>
+    <textarea
+    type="text"
+    id="description"
+    name="description"
+    >
+    <%= article.description %>
+    </textarea>
+</div>
+
+<div class="form-group">
+    <label for="markdown">Resumen</label>
+    <textarea
+    type="text"
+    id="mardown"
+    name="markdown"
+    >
+    <%= article.markdown %>
+    </textarea>
+</div>
+
+<div class="form-group">
+    <label for="markdown">Resumen</label>
+    <textarea
+    type="file"
+    id="mardown"
+    name="markdown"
+    >
+    <%= article.markdown %>
+    </textarea>
+</div>
+
+
+<button type="submit" class="form_button">Guardar</button>

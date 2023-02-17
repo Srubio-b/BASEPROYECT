@@ -1,0 +1,28 @@
+
+        <section class="section-cards">
+            
+        <header class="section-cards__header">
+                <h1>NOVEDADES</h1>
+                <!-- <p>QUE LA FUERZA TE ACOMPAÑE</p> -->
+        </header>
+        <div class="cards-container">
+            <% articles.forEach(article => { %>
+                            <div class="card">
+                <!-- <a class="card__link-add-to-cart" href="">comprar</a> -->
+                <article class="card__article">
+                    <a href="/#/product/${product._id}" class="card__image-container">
+                        <img class="card__image" src="${product.image}" alt="${product._id}">
+                    </a>
+                    <div class="card__content">
+                        <a href="/#/product/1" class="card__heading">
+                        <%= article.name %>
+                        </a>
+                        <p class="card__description">$${product.price}</p>
+                    </div>
+                </article>
+            </div>
+            <% }); %>
+
+        </div>
+        <footer class="section-cards__footer"></footer>
+        </section>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../views/head'); %>
+</head>
+<body>
+    <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+    <header class="main-header">
+        <%- include('../views/header'); %>
+    </header>
+    <div class="container">
+        <h1>Nuevo Articulo</h1>
+        <form action="/" method="POST" id="form"><%- include("_form_fields.ejs") %></form>
+    </div>
+    <footer class="main-footer">
+        <%- include('../views/footer'); %>
+    </footer>
+</body>
+</html>
