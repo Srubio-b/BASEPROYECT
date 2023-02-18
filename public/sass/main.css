@@ -685,6 +685,7 @@ body {
   padding: 1em;
   margin: 0px;
   display: flex;
+  width: 680px;
   flex-wrap: wrap;
   gap: 3em;
   justify-content: center;
@@ -700,6 +701,10 @@ h1 {
   padding: 40px 0px 10px 10px;
 }
 
+.section-cards {
+  display: flex;
+  justify-content: center;
+}
 .section-cards__header p {
   font-family: "STARWARS";
   text-align: center;

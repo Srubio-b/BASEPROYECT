@@ -10,7 +10,7 @@
     </header>
     <div class="container">
         <h1>Nuevo Articulo</h1>
-        <form action="/" method="POST" id="form"><%- include("_form_fields.ejs") %></form>
+        <form action="/new" method="POST" enctype="multipart/form-data" id="form"><%- include("_form_fields.ejs") %></form>
     </div>
     <footer class="main-footer">
         <%- include('../views/footer'); %>

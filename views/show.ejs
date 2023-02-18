@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../views/head.ejs'); %>
+</head>
+<body>
+    <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+    <header class="main-header">
+        <%- include('../views/header'); %>
+    </header>
+    <main class="main-container" class="main">
+        <div class="card">
+            <article class="card__article">
+                <a href="#" class="card__image-container">
+                    <img class="card__image" src="<%= article.image %>" alt="<%= article.cloudinary_id %>">
+                </a>
+                <div class="card__content">
+                    <h5 class="card__heading"><%= article.name %></h5>
+                    <p><%= article.description %></p>
+                    <p><%= article.markdown %></p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <%- include('../views/footer'); %>
+    </footer>
+</body>
+</html>

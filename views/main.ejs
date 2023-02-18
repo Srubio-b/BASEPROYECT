@@ -1,23 +1,34 @@
 
-        <section class="section-cards">
-            
         <header class="section-cards__header">
                 <h1>NOVEDADES</h1>
                 <!-- <p>QUE LA FUERZA TE ACOMPAÑE</p> -->
         </header>
+        <section class="section-cards">
+            
         <div class="cards-container">
             <% articles.forEach(article => { %>
-                            <div class="card">
+            <div class="card">
                 <!-- <a class="card__link-add-to-cart" href="">comprar</a> -->
                 <article class="card__article">
-                    <a href="/#/product/${product._id}" class="card__image-container">
-                        <img class="card__image" src="${product.image}" alt="${product._id}">
+                    <a href="#" class="card__image-container">
+                        <img 
+                        class="card__image" 
+                        src="<%= article.image %>" 
+                        alt="<%= article.cloudinary_id %>"
+                        />
                     </a>
                     <div class="card__content">
-                        <a href="/#/product/1" class="card__heading">
-                        <%= article.name %>
-                        </a>
-                        <p class="card__description">$${product.price}</p>
+                        <h5 class="card__heading"><%= article.name %></h5>
+                        <p><%= article.markdown %>></p>
+                        <a href="/<%= article.slug %>" class="form_linkButton">Ver más</a>
+
+                        <form
+                        action="/<%= article.id %>?_method=DELETE"
+                        method="POST"
+                        class="form_f"
+                        >
+                            <button type="submit" class="button_submit_red">Eliminar</button>
+                        </form>
                     </div>
                 </article>
             </div>

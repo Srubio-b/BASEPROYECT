@@ -17,6 +17,12 @@ const articleSchema = new mongoose.Schema({
     type: String,
     require: true,
     },
+    image: {
+        type: String,
+    },
+    cloudinary_id: {
+        type: String,
+    },
     createAt: {
         type: Date,
         default: Date.now,
@@ -32,12 +38,12 @@ const articleSchema = new mongoose.Schema({
     },
 });
 
-articleSchema.pre("validate", function(next){
-    if(this.title){
-        this.slug = slugify(this.title, {lower: true, strict: true});
+articleSchema.pre("validate", function (next) {
+    if(this.name){
+        this.slug = slugify(this.name, { lower: true, strict: true });
     }
 
-    if(this.markdown){
+    if(this.markdown) {
         this.sanitizedHtml = dompurify.sanitize(marked(this.markdown));
     }
 
@@ -47,4 +53,4 @@ articleSchema.pre("validate", function(next){
 
 module.exports = mongoose.model("Article", articleSchema);
 
-console.log(module.exports);
+
