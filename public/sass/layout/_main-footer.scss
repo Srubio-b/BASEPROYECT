@@ -22,6 +22,7 @@
     & h2 {
         margin-bottom: 30px;
         font-weight: 700;
+        font-family: STARWARS;
     }
 
     & a {
@@ -29,6 +30,7 @@
         color: #7a7a7a;
         font-weight: 600;
         text-decoration: none;
+        text-align: center;
 
         &:hover {
             opacity: .8;

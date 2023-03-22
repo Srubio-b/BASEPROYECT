@@ -18,16 +18,16 @@
                         />
                     </a>
                     <div class="card__content">
-                        <h5 class="card__heading"><%= article.name %></h5>
-                        <p><%= article.markdown %>></p>
-                        <a href="/<%= article.slug %>" class="form_linkButton">Ver más</a>
+                        <h3 class="card__heading"><%= article.name %></h3>
+                        <p><%= article.markdown %></p>
+                        <a href="/<%= article.slug %>" class="form_linkButton" class="bot">Ver más</a>
 
                         <form
                         action="/<%= article.id %>?_method=DELETE"
                         method="POST"
                         class="form_f"
                         >
-                            <button type="submit" class="button_submit_red">Eliminar</button>
+                            <button type="submit" class="button_submit_red" class="bot">Eliminar</button>
                         </form>
                     </div>
                 </article>
