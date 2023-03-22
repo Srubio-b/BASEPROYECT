@@ -49,6 +49,10 @@
             border-radius: 60px;
             @media (max-width: 472px) {
                 background-color: #fbd64a;
+                position: absolute;
+                padding: 0;
+                width: 10%;
+                left: 40%;
             }
         }
         &__bar input {

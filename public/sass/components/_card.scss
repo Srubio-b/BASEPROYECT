@@ -51,6 +51,7 @@
         
         @media (min-width: 320px) {
             // flex-direction: row;
+            flex-direction: column;
         }
         
         @media (min-width: 500px) {
@@ -65,7 +66,7 @@
         // border: 5px solid red;
         
         @media (min-width: 320px) {
-            width: 10em;
+            width: 100%;
         }
         
         @media (min-width: 500px) {
